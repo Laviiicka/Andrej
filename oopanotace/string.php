@@ -58,7 +58,7 @@ abstract class StringsLavickaAndrej {
     }
 }
 class SringLavickaAndrej extends StringsLavickaAndrej{
-    //nahradi sttring jinym stringem
+    //nahradi string jinym stringem
     public static function substrLavickaAndrej() {
         parent::substrLavickaAndrej();
         return substr($body, null);
@@ -96,11 +96,11 @@ class SringLavickaAndrej extends StringsLavickaAndrej{
     public function str_replaceLavickaAndrej($deleteW) {
        return  str_replace($deleteW, '', 'ola muchachos, am i right here?');
     }
-    //koduje heslo
+    //koduje password
     public function md5LavickaAndrej($codePass) {
        return  md5($codePass, '420yyyeee4455321e');
     }
-    // vlozi element z array element do stringu
+    // vlozi element z aray
     public function implodeLavickaAndrej($pasteD) {
        return  implode(',', $pasteD);
     }
