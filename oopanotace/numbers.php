@@ -98,16 +98,4 @@ var_dump(numbersLavicka::deleniLavicka($a, $b));
 var_dump(numbersLavicka::nasobeniLavicka($a, $b));
 var_dump(numbersLavicka::number_formatLavicka($formatuje));
 
-// * floor ($mensi)
- //* sqrt(2odmocnina)
- //* pow(cislo, mocnina)
- //* sin(cislo), cos(cislo), tan(cislo)
- //* asin(cislo), acos(cislo), atan(cislo)
-// * fmod(základ, dělitel) //vrátí zbytek
-// * abs(cislo) //absolutní hodnota zadaného čísla
- //* odečítání
-// * sčítání
-// * dělení
-// * násobení
-// * number format
 ?>
