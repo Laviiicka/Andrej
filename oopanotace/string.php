@@ -80,7 +80,7 @@ static public function ucwordsLavicka($sentence) {
     return ucwords($sentence);
 }
 
-}
+}//definice nových proměnných
 $retez = "adsdasdasdasdasdgayfa";
 $odkudseZ =6;
 $txt="Martínek uz ma prime";
@@ -107,7 +107,7 @@ $inthisS="Nazdar jsem Mike Wazowski";
 $roz= 'A..z';
 $out="\a\aJsem GOLD IIII\a\a";
 $toP="\a";
-
+//vypíše funkci pomoci var_dump nadefinovane ve tride
 var_dump(stringLavicka::substrLavicka($retez, $odkudseZ));
 var_dump(stringLavicka::substr__replaceLavicka($txt, $whatCH, $begin));
 var_dump(stringLavicka::strtrLavicka($string, $coNA, $whichCH));
