@@ -1,134 +1,135 @@
 <?php
-abstract class StringsLavickaAndrej {
-    protected static function substrLavickaAndrej($body){
-    define($body, 'deset'); 
-    }
-    protected static function substr_replaceLavickaAndrej($change){
-    define($change, 'lol'); 
-    }
-    protected static function strtrLavickaAndrej($fix){
-    define($fix, 'Wilkomen php'); 
-    }
-    protected static function strtoupperLavickaAndrej($velkeP){
-    define($velkeP, 'ja nekourim'); 
-    }
-    protected static function strtolowerLavickaAndrej($maleP){
-    define($maleP, 'HELLO ich bin alza'); 
-    }
-    protected static function strrposLavickaAndrej($chooseif){
-    define($chooseif, '213465897xcjhewtpaegylkm'); 
-    }
-    protected static function strriposLavickaAndrej($findex){
-    define($findex, '420YZO'); 
-    }
-    protected static function strposLavickaAndrej($najdi){
-    define($body, 'deset'); 
-    }
-    protected static function strlenLavickaAndrej ($count){
-    define($count, 'HIROSHIMA'); 
-    }
-    protected static function strchrLavickaAndrej (); //same jak strstr 
-    
-    protected static function str_replaceLavickaAndrej ($deleteW){
-    define($deleteW, array('hy','chy','ry','ty','ny')); 
-    }
-    protected static function md5LavickaAndrej($codePass){
-    define($codePass, 'pear'); 
-    }
-    protected static function implodeLavickaAndrej($pasteD){
-    define($pasteD, array('name','surname','street')); 
-    }
-    protected static function explodeLavickaAndrej($brokeST){
-    define($brokeST, 'Nazdar Hi ola'); 
-    }
-    protected static function addcslashesLavickaAndrej($wrifrto){
-    define($wrifrto, '10,20,30,40,50,60,70,80,90,100'); 
-    }
-    protected static function addslashesLavickaAndrej($pasteL){
-    define($pasteL, 'MC´Donald'); 
-    }
-    protected static function trimLavickaAndrej($passC){
-    define($passC, '\h\hshaco je noob\h\h'); 
-    }
-    protected static function ucfirstLavickaAndrej($firstB){
-    define($firstB, 'janek  a pleshka'); 
-    }
-    protected static function ucwordsLavickaAndrej($evfiB){
-    define($evfiB, 'martin a honza'); 
-    }
+/**
+ * @author Andrej Lavicka
+ */
+class stringLavicka {
+    // substr - vypise nam cast retezce
+    static public function substrLavicka($retez,$odkudseZ) {
+        return substr($retez, $odkudseZ);
 }
-class SringLavickaAndrej extends StringsLavickaAndrej{
-    //nahradi string jinym stringem
-    public static function substrLavickaAndrej() {
-        parent::substrLavickaAndrej();
-        return substr($body, null);
-    }
-    //nahradi dany vyraz od urcenego bitu
-    public function substr_replaceLavickaAndrej($change) {
-        return substr_replace($change, 'ccc', 0);
-        }
+// vlozi v retezci na prislusne misto string
+static public function substr__replaceLavicka($txt,$whatCH,$begin) {
+   return substr_replace($txt, $whatCH, $begin);
+}
+//nahradi  v retezci slovo
+static public function strtrLavicka($sentence,$coNA,$whichCH) {
+    return strtr($sentence, $coNA, $whichCH);
+}
+//vsechny pismena v rezezci budou velka
+static public function strtoupperLavicka($vsechnoV) {
+    return strtoupper($vsechnoV);
+}
+//vsechny budou malym pismenem
+static public function strtolowerLavicka($vsechnoM) {
+    return strtolower($vsechnoM);
+}
+//v retezci najde pozadovany retez posledni moznost
+static public function strrposLavicka($odkudH,$coHleda) {
+    return strrpos($odkudH, $coHleda);
+}
+//vyhleda presne zadany string v retezci
+static public function strriposLavicka($odkudH,$exactlyhledam) {
+   return strripos($odkudH, $exactlyhledam); 
+}
+//najde v retezci prvni shodu toho co hledam
+static public function strposLavicka($odkudH,$coHleda) {
+    return strpos($odkudH, $coHleda);
+}
+//vypise retezcovou delku
+static public function strlenLavicka($tellL) {
+    return strlen($tellL);
+}
+//najdu co hledam
+static public function strchrLavicka($odkudH,$coHleda) {
+    return strchr($odkudH, $coHleda);
+}
+// vyjme/nahradi promenne v poli
+static public function str_replace($samoHl,$inthis,$tady) {
+   return str_replace($samoHl, $inthis, $tady);
+}
+// zasifruje nam slovo
+static public function md5Lavicka($msg) {
+    return md5($msg);
+}
+//do pole nam neco vlozi
+static public function implodeLavicka($wha,$whe ){
+    return implode($wha, $whe);
+}
+//rozdeli to na substringy
+static public function explodeLavicka($hranica,$stringS) {
+    return explode($hranica, $stringS);
+}
+//prida slash pred ty charaktery
+static public function addcslashesLavicka($inthisS,$roz) {
+    return addcslashes($inthisS, $roz);
+}
+//vlozi do vety backslash
+static public function addslashLavicka($stringS) {
+    return addslashes($stringS);
+}
+// odebere nevhodne vety z retezce
+static public function trimLavicka($out,$toP) {
+    return trim($out, $toP);
+}
+//prvni pismeno ve vete bude velke
+static public function ucfirstLavicka($sentence) {
+    return ucfirst($sentence);
+}
+//vsechny slova budou napsana velkym pismenem
+static public function ucwordsLavicka($sentence) {
+    return ucwords($sentence);
+}
 
-   //zmeni urcene slovo na jine
-    public function strtrLavickaAndrej($fix) {
-       return  strtr($fix, 'Hallo', 'Ola');
-    }
-    //zmeni ve vete vsechno na velka pismena
-    public function strtoupperLavickaAndrej($velkeP) {
-       return  strtoupper($velkeP);
-    }
-    //zmeni ve vete vsechno na mala pismena
-    public function strtolowerLavickaAndrej($maleP) {
-       return  strtolower($maleP);
-    }
-    //urci zda je 7 od 9bitu dal
-    public function strrposLavickaAndrej($chooseif) {
-       return  strrpos($chooseif, '7',9);
-    }
-    //najde zda takova kombinace v rezeci je
-    public function strriposLavickaAndrej($findex) {
-       return  strripos($findex, 'YZ', 0);
-    }
-    //rekne jak dlouhy je retezec
-    public function strlenLavickaAndrej($count) {
-        return strlen($count);
-    }
-    //smaze pismena vbrana v retezci
-    public function str_replaceLavickaAndrej($deleteW) {
-       return  str_replace($deleteW, '', 'ola muchachos, am i right here?');
-    }
-    //koduje password
-    public function md5LavickaAndrej($codePass) {
-       return  md5($codePass, '420yyyeee4455321e');
-    }
-    // vlozi element z aray
-    public function implodeLavickaAndrej($pasteD) {
-       return  implode(',', $pasteD);
-    }
-    //rozlozi string na jednotlive stringy
-    public function explodeLavickaAndrej($brokeST) {
-       return  explode('', $brokeST);
-    }
-    //vypise retezec od do
-    public function addcslashesLavickaAndrej($wrifrto) {
-        return addcslashes($wrifrto, '\1...\7');
-    }
-    // vloží lomeno
-    public function addslashesLavickaAndrej($pasteL) {
-       return  addslashes($pasteL);
-    }
-    //vyjme cast retezce a zbytek promitne
-    public function trimLavickaAndrej($passC) {
-       return  trim($passC, '\h.');
-    }
-    //  první pismeno v celém retezci bude velke
-    public function ucfirstLavickaAndrej($firstB) {
-        return ucfirst($firstB);
-    }
-    //kazde prvni pismeno v kazdem slove velke
-    public function ucwordsLavickaAndrej($evfiB) {
-       return ucwords($evfiB);
-    }
-   }
-echo 'StringsLavickaAndrej';
-var_dump(StringLavickaAndrej::substrLavickaAndrej(points));
+}
+$retez = "adsdasdasdasdasdgayfa";
+$odkudseZ =6;
+$txt="Martínek uz ma prime";
+$whatCH="pomalu";
+$begin= 15;
+$sentence="vegani jsou hloupi lide";
+$coNA ="krab";
+$whichCH="deti";
+$vsechnoV="pepa je z depa";
+$vsechnoM="ZED JE NOOB CHAMP";
+$odkudH ="112A3c1E512sad";
+$coHleda= "112";
+$exactlyhledam="sad";
+$tellL= "Chci byt aspon mge za tyhle prazdniny";
+$samoHl= array ('a','e','i','o','u','y');
+$inthis="";
+$tady="To je ale krasny den asi pujdu na workout";
+$msg= "brokovnice";
+$wha=",";
+$whe= array ('narodnost','pohlavi','orientace','nabozenstvi');
+$hranica = '""';
+$stringS="delfin zralok kladivoun";
+$inthisS="Nazdar jsem Mike Wazowski";
+$roz= 'A..z';
+$out="\a\aJsem GOLD IIII\a\a";
+$toP="\a";
+
+var_dump(stringLavicka::substrLavicka($retez, $odkudseZ));
+var_dump(stringLavicka::substr__replaceLavicka($txt, $whatCH, $begin));
+var_dump(stringLavicka::strtrLavicka($string, $coNA, $whichCH));
+var_dump(stringLavicka::strtoupperLavicka($vsechnoV));
+var_dump(stringLavicka::strtolowerLavicka($vsechnoM));
+var_dump(stringLavicka::strrposLavicka($odkudH, $coHleda));
+var_dump(stringLavicka::strriposLavicka($odkudH, $exactlyhledam));
+var_dump(stringLavicka::strposLavicka($odkudH, $coHleda));
+var_dump(stringLavicka::strlenLavicka($tellL));
+var_dump(stringLavicka::strchrLavicka($odkudH, $coHleda));
+var_dump(stringLavicka::str_replace($samoHl, $inthis, $tady));
+var_dump(stringLavicka::md5Lavicka($msg));
+var_dump(stringLavicka::implodeLavicka($wha, $whe));
+var_dump(stringLavicka::explodeLavicka($hranica, $stringS));
+var_dump(stringLavicka::addcslashesLavicka($inthisS, $roz));
+var_dump(stringLavicka::addslashLavicka($stringS));
+var_dump(stringLavicka::trimLavicka($out, $toP));
+var_dump(stringLavicka::ucfirstLavicka($sentence));
+var_dump(stringLavicka::ucwordsLavicka($sentence));
+
+
+
+
 ?>
+
