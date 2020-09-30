@@ -1,0 +1,79 @@
+<?php
+
+/* 
+ * Author _ Andrej _ Lavicka 
+ */
+//nastavi tridu uzivatele
+class UserLavicka_Andrej{ 
+    private $nameLavicka_Andrej;
+    public function setnameLavicka_Andrej($nameLavicka_Andrej) {
+        $this->nameLavicka_Andrej =$nameLavicka_Andrej;
+    }
+    public function getnameLavicka_Andrej() {
+        return $this->nameLavicka_Andrej;
+    }
+    
+    private $vekLavicka_Andrej;
+    public function setvekLavicka_Andrej($vekLavicka_Andrej) {
+        $this->vekLavicka_Andrej = $vekLavicka_Andrej;
+    }
+    public function getvekLavicka_Andrej() {
+        return $this->vekLavicka_Andrej;  
+    }
+   
+    protected $summonerLavicka_Andrej;
+    public function setsummunerLavicka_Andrej($summonerLavicka_Andrej) {
+        $this->nameLavicka_Andrej = $summonerLavicka_Andrej;
+    }
+    public function getsummonerLavicka_Andrej() {
+        return $this->summonerLavicka_Andrej;
+    }
+   
+    protected $pohlaviLavicka_Andrej;
+   
+    protected $schopnostiLavicka_Andrej;
+   
+     public $autoLavicka_Andrej = 'Mercedes Benz';
+    public function getautoLavicka_Andrej() {
+        return $this->autoLavicka_Andrej;
+    }
+   
+     public $mestoLavicka_Andrej = 'Las Vegas';
+    public function getmestoLavicka_Andrej() {
+        return $this->mestoLavicka_Andrej;
+    }
+   
+     public $orientaceLavicka_Andrej = 'hetero';
+     public function getorientaceLavicka_Andrej() {
+        return $this->orientaceLavicka_Andrej;
+    }
+  
+     public $strachLavicka_Andrej = 'mravenci';
+    public function getstrachLavicka_Andrej() {
+        return $this->strachLavicka_Andrej;
+    }
+  
+     public $stastnecisloLavicka_Andrej = 3;
+   public function getstastnecisloLavicka_Andrej() {
+        return $this->stastnecisloLavicka_Andrej;
+    }
+
+    public function __construct() {
+        
+    }   
+ }
+//nastavujeme promenne pomoci set
+$user = new UserLavicka_Andrej();
+$user->setnameLavicka_Andrej('L');
+$user->setvekLavicka_Andrej(25);
+//vypsani pomoci echo
+echo $user->getautoLavicka_Andrej(); echo'<br>';
+echo $user->getmestoLavicka_Andrej();echo'<br>';
+echo $user->getorientaceLavicka_Andrej();echo'<br>';
+echo $user->getstrachLavicka_Andrej();echo'<br>';
+echo $user->getstastnecisloLavicka_Andrej();echo'<br>';
+//vsechno vypiseme pomoci vardump
+var_dump($user);
+
+
+ ?>
